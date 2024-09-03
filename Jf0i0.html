@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../layout.css">
+	</head>
+	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false">
+		<div id = "container">
+			<div id = "titleBox"> JAVA 프로그래밍 </div>
+			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><ul></ul><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
+			<div id = "contentBox">
+				<h3>0. JAVA 프로그래밍 시작 </h3>
+
+<h4>프로그램 생성 과정</h4>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; text-align:left; vertical-align:top;'>
+	<tr style='background-color:silver;'>
+		<td>
+			&nbsp; 알고리즘 작성: 십진수, 문자, 기호, 그림, 등 사용 가능 
+		</td>
+ 	</tr>
+	<tr>
+		<td>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hello, World!를  출력
+		</td>
+	</tr>
+	<tr style='background-color:silver;'>
+		<td>
+			&nbsp; JAVA 언어로 소스코드 작성
+		</td>
+ 	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td>
+						&nbsp;&nbsp; Main.java&nbsp;
+					</td>
+					<td style='border:1px solid #bcbcbc; text-align:left; font-size:8pt;'>
+						public class Main {
+						<br> &nbsp; &nbsp; public static void main(String[] args) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<br> &nbsp; &nbsp;  &nbsp; &nbsp; System.out.println("Hello World");
+						<br> &nbsp; &nbsp; }
+						<br>}
+					</td>
+					<td>
+						 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr style='background-color:silver;'>
+		<td>
+			&nbsp; 컴파일: JAVA 소스코드 → JAVA 바이트 코드(JVM이 실행하는 명령어의 중간단계)
+		</td>
+ 	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td>
+						&nbsp;&nbsp; Main.class
+					</td>
+					<td style='border:1px solid #bcbcbc; text-align:left; font-size:7pt;'>
+						public class Main {
+						<br> &nbsp; public Main();
+						<br> &nbsp; &nbsp; 0 &nbsp; aload_0 [this]
+						<br> &nbsp; &nbsp; 1 &nbsp; invokespecial java.lang.Object() [8]
+						<br> &nbsp; &nbsp; 4 &nbsp; return
+						<br> &nbsp; &nbsp; &nbsp; Line numbers:
+						<br> &nbsp; &nbsp; &nbsp; &nbsp; [pc: 0, line: 3]
+						<br> &nbsp; &nbsp; &nbsp; Local variable table:
+						<br> &nbsp; &nbsp; &nbsp; &nbsp; [pc: 0, pc: 5] local: this index: 0 type: Main
+						<br> &nbsp; public static void main(java.lang.String[] args);
+						<br> &nbsp; &nbsp; 0 &nbsp; getstatic java.lang.System.out : java.io.PrintStream [16]
+						<br> &nbsp; &nbsp; 3 &nbsp; ldc <String "Hello World"> [22]
+						<br> &nbsp; &nbsp; 5 &nbsp; invokevirtual java.io.PrintStream.println(java.lang.String) : void [24]
+						<br> &nbsp; &nbsp; 8 &nbsp; return
+						<br> &nbsp; &nbsp; &nbsp; Line numbers:
+						<br> &nbsp; &nbsp; &nbsp; &nbsp; [pc: 0, line: 5]
+						<br> &nbsp; &nbsp; &nbsp; &nbsp; [pc: 8, line: 6]
+						<br> &nbsp; &nbsp; &nbsp; Local variable table:
+						<br> &nbsp; &nbsp; &nbsp; &nbsp; [pc: 0, pc: 9] local: args index: 0 type: java.lang.String[]
+						<br>}
+					</td>
+					<td>
+						 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr style='background-color:silver;'>
+		<td>
+			&nbsp; JVM(Java Virtual Machine, 자바가상머신): JAVA 바이트 코드 → 기계어(이진수) 실행
+		</td>
+ 	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td>
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+					</td>
+					<td style='border:1px solid #bcbcbc; text-align:left; font-size:8pt;'>
+						01111010101110011010011101110111101010111011011001101
+						<br>11100101101001111110011101011010110101110110011001110
+						<br>10011101011010110101011100110111110101011011001100110
+						<br>01011001100101010111011110101011101011101110111001110
+						<br>01111010101111011110111111111111010101010100111010101
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<h4>JAVA 프로그래밍의 기본 단위 : 클래스(메서드,변수,상수를 포함)  </h4>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc;'>
+	<tr style='background-color:silver;'>
+		<td>
+			클래스 의사코드(pseudocode) 표현 
+		</td>
+		<td>	
+			수학적 표현 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			public class 클래스이름 {
+			<br> &nbsp; private&nbsp; 자료형<sub>변수</sub>&nbsp; 변수
+			<br> &nbsp; private final&nbsp; 자료형<sub>상수</sub>&nbsp; 상수
+			<br> &nbsp; ...
+		</td>
+		<td>
+			<br> &nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp;접근 자료형<sub>y</sub> <span style='color:red;'>메서드f</span>(자료형<sub>x<sub>1</sub></sub> <span style='color:red;'>x<sub>1</sub></span>, 자료형<sub>x<sub>2</sub></sub> <span style='color:red;'>x<sub>2</sub></span>, ... , 자료형<sub>x<sub>n</sub></sub> <span style='color:red;'>x<sub>n</sub></span>) {
+			<br> &nbsp; &nbsp; &nbsp; &nbsp; 실행 내용
+			<br> &nbsp; &nbsp; &nbsp; &nbsp; return <span style='color:red;'>y</span>;
+			<br> &nbsp; &nbsp; }
+		</td>
+		<td>	
+			y = f( x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub> ) 
+			<br>입력 x : 함수에 전달하는 값
+			<br>출력 y : 함수의 실행 결과값  
+			<br>함수 f : x를 바탕으로 실행 후 y를 반환
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp; ...
+			<br>}
+		</td>
+	</tr>
+</table>
+
+<h4>클래스를 이용한 문제 해결 : 트랙 둘레 계산</h4>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+		<td style='width:320px;'>
+			<table style='margin:0; padding:0px;'>
+				<tr>
+					<td style='width:20px; margin:0; padding:0px; border:0px; text-align:right;'>
+						 ㉯
+					</td>
+					<td style='width:50px; margin:0; padding:0px; border:0px; text-align:right;'>
+						 <div style='width:50px; height:100px; border-radius:50px 0px 0px 50px; background-color:skyblue;'></div>
+					</td>
+					<td style='width:100px; margin:0; padding:0px; border:0px; text-align:center;'>
+						 ㉮<br><div style='width:100px; height:100px; background-color:skyblue;'></div>㉱
+					</td>
+					<td style='width:50px; margin:0; padding:0px; border:0px; text-align:left;'>
+						 <div style='width:50px; height:100px; border-radius:0px 50px 50px 0px; background-color:skyblue;'></div>
+					</td>
+					<td style='width:20px; margin:0; padding:0px; text-align:left;'>
+						 ㉰
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			y1 = 트랙둘레계산( 가로길이, 세로길이 ) 
+			<br> &nbsp;&nbsp;&nbsp; = ㉮ + ㉯ + ㉰ + ㉱ = ( ㉮ + ㉱ ) + ( ㉯ + ㉰ )
+			<br> &nbsp;&nbsp;&nbsp; = 2×직선부분둘레계산( 가로길이 ) + 원둘레계산( 세로길이 )
+			<br>
+			<br>y2 = 직선부분둘레계산( 직선길이 ) = 직선길이
+			<br>
+			<br>y3 = 원둘레계산( 지름 ) = PI × 지름
+			<br>
+			<br>PI = 3.141592
+		</td>
+	</tr>
+</table>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr style='background-color:silver;'>
+		<td>
+			public class 둘레계산클래스 {
+		</td>
+		<td>
+			클래스 시작 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp; &nbsp; private final 실수 PI = 3.141592;
+		</td>
+		<td>
+			상수 선언 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp; 
+		</td>
+		<td>
+			&nbsp;
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td>
+			&nbsp; &nbsp; public 실수 트랙둘레계산( 정수 가로길이, 정수 세로길이 ) {
+		</td>
+		<td>
+			메서드 시작 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp; &nbsp; &nbsp; &nbsp; 실수 트랙둘레 = 2×직선부분둘레계산( 가로길이 ) + 원둘레계산( 세로길이 ); 
+		</td>
+		<td>
+			실행 내용
+		</td>
+	</tr>
+	<tr style='background-color:skyblue;'>
+		<td>
+			&nbsp; &nbsp; &nbsp; &nbsp; return 트랙둘레;
+			<br>&nbsp; &nbsp; }
+		</td>
+		<td>
+			메서드 종료 
+			<br> &nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td style='width:600px;'>
+			<br>&nbsp; &nbsp; private 정수 직선부분둘레계산( 정수 직선길이 ) {
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; return 직선길이;
+			<br>&nbsp; &nbsp; }
+			<br><br>&nbsp; &nbsp; private 실수 원둘레계산( 정수 지름 ) {
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; 실수 원둘레 = PI × 지름; 
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; return 원둘레;
+			<br>&nbsp; &nbsp; } 
+		</td>
+	</tr>
+	<tr style='background-color:silver;'>
+		<td>
+			}
+		</td>
+		<td>
+			클래스 끝
+		</td>
+	</tr>
+</table>
+ &nbsp;
+ &nbsp;
+
+
+				<br><br><br><br><br><br><br><br> &nbsp; 
+			</div>
+		</div>
+	</body> 
+</html>
+
+
