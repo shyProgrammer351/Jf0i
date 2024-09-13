@@ -21,7 +21,7 @@
  	</tr>
 	<tr>
 		<td>
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hello, World!를  출력
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hello, World!를  출력
 		</td>
 	</tr>
 	<tr style='background-color:silver;'>
@@ -128,10 +128,10 @@
 	</tr>
 	<tr>
 		<td>
-			public class 클래스이름 {
-			<br> &nbsp; private&nbsp; 자료형<sub>변수</sub>&nbsp; 변수
-			<br> &nbsp; private final&nbsp; 자료형<sub>상수</sub>&nbsp; 상수
-			<br> &nbsp; ...
+			접근권한&nbsp; class&nbsp; 클래스이름 {
+			<br> &nbsp;&nbsp; 접근권한&nbsp; 자료형<sub>변수</sub>&nbsp; 변수;
+			<br> &nbsp;&nbsp; 접근권한&nbsp; final&nbsp; 자료형<sub>상수</sub>&nbsp; 상수;
+			<br> &nbsp;&nbsp; ...
 		</td>
 		<td>
 			<br> &nbsp;
@@ -139,10 +139,10 @@
 	</tr>
 	<tr>
 		<td>
-			&nbsp;접근 자료형<sub>y</sub> <span style='color:red;'>메서드f</span>(자료형<sub>x<sub>1</sub></sub> <span style='color:red;'>x<sub>1</sub></span>, 자료형<sub>x<sub>2</sub></sub> <span style='color:red;'>x<sub>2</sub></span>, ... , 자료형<sub>x<sub>n</sub></sub> <span style='color:red;'>x<sub>n</sub></span>) {
+			&nbsp;&nbsp; 접근권한 자료형<sub>y</sub> <span style='color:red;'>메서드f</span>(자료형<sub>x<sub>1</sub></sub><span style='color:red;'>x<sub>1</sub></span>,자료형<sub>x<sub>2</sub></sub><span style='color:red;'>x<sub>2</sub></span>, ...,자료형<sub>x<sub>n</sub></sub><span style='color:red;'>x<sub>n</sub></span>){
 			<br> &nbsp; &nbsp; &nbsp; &nbsp; 실행 내용
 			<br> &nbsp; &nbsp; &nbsp; &nbsp; return <span style='color:red;'>y</span>;
-			<br> &nbsp; &nbsp; }
+			<br> &nbsp;&nbsp; }
 		</td>
 		<td>	
 			y = f( x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub> ) 
@@ -199,7 +199,7 @@
 <table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
 	<tr style='background-color:silver;'>
 		<td>
-			public class 둘레계산클래스 {
+			public class RrunningTrack {
 		</td>
 		<td>
 			클래스 시작 
@@ -207,7 +207,7 @@
 	</tr>
 	<tr>
 		<td>
-			&nbsp; &nbsp; private final 실수 PI = 3.141592;
+			&nbsp; &nbsp; private final double PI = 3.141592;
 		</td>
 		<td>
 			상수 선언 
@@ -223,7 +223,7 @@
 	</tr>
 	<tr style='background-color:skyblue;'>
 		<td>
-			&nbsp; &nbsp; public 실수 트랙둘레계산( 정수 가로길이, 정수 세로길이 ) {
+			&nbsp; &nbsp; public double calculatePerimeter( int width, int height ) {
 		</td>
 		<td>
 			메서드 시작 
@@ -231,7 +231,7 @@
 	</tr>
 	<tr>
 		<td>
-			&nbsp; &nbsp; &nbsp; &nbsp; 실수 트랙둘레 = 2×직선부분둘레계산( 가로길이 ) + 원둘레계산( 세로길이 ); 
+			&nbsp; &nbsp; &nbsp; &nbsp; double perimeter = 2×calculateStraightLength( width ) + calculateCircumference( height ); 
 		</td>
 		<td>
 			실행 내용
@@ -239,7 +239,7 @@
 	</tr>
 	<tr style='background-color:skyblue;'>
 		<td>
-			&nbsp; &nbsp; &nbsp; &nbsp; return 트랙둘레;
+			&nbsp; &nbsp; &nbsp; &nbsp; return perimeter;
 			<br>&nbsp; &nbsp; }
 		</td>
 		<td>
@@ -248,13 +248,13 @@
 		</td>
 	</tr>
 	<tr>
-		<td style='width:600px;'>
-			<br>&nbsp; &nbsp; private 정수 직선부분둘레계산( 정수 직선길이 ) {
-			<br>&nbsp; &nbsp; &nbsp; &nbsp; return 직선길이;
+		<td style='width:630px;'>
+			<br>&nbsp; &nbsp; private int calculateStraightLength( int length ) {
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; return length;
 			<br>&nbsp; &nbsp; }
-			<br><br>&nbsp; &nbsp; private 실수 원둘레계산( 정수 지름 ) {
-			<br>&nbsp; &nbsp; &nbsp; &nbsp; 실수 원둘레 = PI × 지름; 
-			<br>&nbsp; &nbsp; &nbsp; &nbsp; return 원둘레;
+			<br><br>&nbsp; &nbsp; private double calculateCircumference( int diameter ) {
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; double circumference = PI × diameter; 
+			<br>&nbsp; &nbsp; &nbsp; &nbsp; return circumference;
 			<br>&nbsp; &nbsp; } 
 		</td>
 	</tr>
